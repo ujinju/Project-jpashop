@@ -12,7 +12,7 @@ import java.util.List;
 @Entity
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name = "dtype") //싱글 테이블로 정리했을 때 구분할 수 있도록 음악은 'A', 도서는 'B', 영화는 'M'
-@Getter
+@Getter @Setter
 public class Item {
 
     @Id @GeneratedValue
